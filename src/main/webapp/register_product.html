@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyOT - Register Product</title>
+    <link rel="stylesheet" href="/css/register_product.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+<div class="register">
+    <h1>Register Product</h1>
+    <a id="backButton" href="/" class="back-button-img"> <img src="/images/back_arrow.jpg" alt="Back" class="icon" />
+    </a>
+    <form id="productRegistrationForm" method="post">
+        <div class="form-row">
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product-name" name="product_name" placeholder="Enter product name" required>
+            <span class="error-message" id="product_name_error"></span>
+        </div>
+
+        <div class="form-row">
+            <label for="version">Version:</label>
+            <input type="text" id="version" name="version" placeholder="Enter version" required>
+            <span class="error-message" id="version_error"></span>
+        </div>
+
+        <input type="hidden" id="comp_id" name="comp_id" value="1">
+        <span class="error-message" id="comp_id_error"></span>
+
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="messageContainer" style="margin-top: 20px; font-weight: bold;"></div>
+</div>
+
+<script src="/js/register_product.js"></script>
+</body>
+</html>

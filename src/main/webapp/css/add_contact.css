@@ -1,0 +1,150 @@
+body {
+    background-color: aliceblue;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif; /* Consistent font */
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2d388b;
+    margin-bottom: 2rem; /* Spacing below heading */
+}
+
+.register {
+    position: relative;
+    background-color: white;
+    padding: 2rem 4rem; /* Adjusted padding */
+    border-radius: 16px; /* Consistent border-radius */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Consistent shadow */
+    width: 90%; /* Responsive width */
+    max-width: 500px; /* Max width for single-column form */
+}
+
+.back-button-img {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    text-decoration: none;
+    background: white;
+    border-radius: 8px;
+    padding: 6px 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.back-button-img:hover {
+    background-color: #f0f0f0;
+    transform: none; /* No transform on hover */
+}
+
+.back-button-img img.icon {
+    width: 22px;
+    height: 22px;
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Stack form rows vertically */
+    gap: 0.5rem; /* Space between form rows */
+    align-items: center; /* Center form content horizontally */
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column; /* Stack label, input, error message vertically */
+    width: 100%; /* Each form-row takes full width */
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #555;
+    text-align: left; /* Labels align left */
+    width: auto; /* Remove fixed width */
+    margin-right: 0; /* Remove fixed margin */
+}
+
+input {
+    flex: none; /* Remove flex from input to take 100% width of parent */
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    width: 100%; /* Input takes full width of form-row */
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #2d388b;
+    outline: none;
+}
+
+.error-message {
+    font-size: 0.85rem;
+    color: #e63946;
+    margin-top: 3px;
+    min-height: 1.2em; /* Ensure space for error messages */
+}
+
+button {
+    width: 50%;
+    padding: 14px;
+    margin: 20px auto 0 auto; /* Center button horizontally */
+    border-radius: 10px;
+    font-size: 1.1rem;
+    background-color: #2d388b;
+    color: white;
+    cursor: pointer;
+    border: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1a245f;
+}
+
+/* Toast styles */
+.toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    font-size: 1rem;
+    opacity: 0.9;
+    z-index: 1000;
+    transition: opacity 0.5s ease-out;
+}
+
+.toast.success {
+    background-color: #4CAF50;
+}
+
+.toast.error {
+    background-color: #f44336;
+}
+
+.toast.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Error input styling */
+input.input-error {
+    border-color: #e63946;
+}

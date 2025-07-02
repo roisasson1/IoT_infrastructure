@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyOT - Add Contact</title>
+    <link rel="stylesheet" href="/css/add_contact.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+<div class="register">
+    <h1>Add Contact</h1>
+    <a id="backButton" href="#" class="back-button-img">
+        <img src="/images/back_arrow.jpg" alt="Back" class="icon" />
+    </a>
+    <form id="addContactForm"> <div class="form-row">
+        <label for="contact">Contact Name:</label>
+        <input type="text" id="contact" name="contact_name" placeholder="Enter contact name" required>
+        <span class="error-message" id="contact_name_error"></span>
+    </div>
+
+        <div class="form-row">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter email" required>
+            <span class="error-message" id="email_error"></span>
+        </div>
+
+        <div class="form-row">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required>
+            <span class="error-message" id="phone_error"></span>
+        </div>
+
+        <div class="form-row">
+            <label for="linkedin">LinkedIn:</label>
+            <input type="text" id="linkedin" name="linkedin" placeholder="Enter LinkedIn link" required>
+            <span class="error-message" id="linkedin_error"></span>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<script src="/js/add_contact.js"></script>
+</body>
+</html>

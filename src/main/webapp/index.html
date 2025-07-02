@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyOT</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+<div class="login">
+    <h1>MyOT</h1>
+    <form id="loginForm" action="/login" method="POST"> <label for="login-email">Email:</label>
+        <input type="email" id="login-email" name="email"
+               placeholder="Enter your email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"
+               placeholder="Enter your password" required>
+        <a href="" style="text-decoration: none;">
+            Forgot Password?
+        </a>
+        <button type="submit">Sign in</button>
+    </form>
+
+    <p>Not registered?
+        <a href="/register" style="text-decoration: none;">
+            <strong>Let's get started!</strong>
+        </a>
+    </p>
+</div>
+
+<script src="js/index.js"></script>
+
+</body>
+</html>
