@@ -1,6 +1,17 @@
 # IoT Infrastructure
 This project delivers a robust and flexible IoT infrastructure designed to facilitate seamless communication between diverse smart devices and managing applications. It enables companies to collect, store, manage, and process real-time data from their IoT devices efficiently, without the need to build complex backend systems from scratch.
 
+## Technologies Used
+**Core Language**: Java
+
+**Website**: Javascript, HTML, CSS, Apache Tomcat
+
+**Networking**: TCP, UDP, HTTP (using Selector for non-blocking I/O)
+
+**Design Patterns**: Thread Pool, Parser, Factory, Command, Observer, Mediator
+
+**Databases**: MySQL (for admin data), MongoDB (for IoT data)
+
 ## Core API
 Clients interact with the system via a simple RESTful API for device and data management:
 
@@ -32,17 +43,6 @@ The system follows a microservices-oriented architecture, primarily featuring:
 
 ### Plug & Play mechanism
 Allows dynamic loading of new commands via JAR files into a dedicated folder, utilizing the Observer Pattern, Class Loader, and Mediator Pattern to seamlessly integrate new functionality without downtime. A Watchdog component monitors the Gateway and performs automatic restarts in case of failure.
-
-## Technologies Used
-**Core Language**: Java
-
-**Website**: Javascript, HTML, CSS, Apache Tomcat
-
-**Networking**: TCP, UDP, HTTP (using Selector for non-blocking I/O)
-
-**Design Patterns**: Thread Pool, Parser, Factory, Command, Observer, Mediator
-
-**Databases**: Relational DB (for admin data), Non-Relational DBs (for IoT data)
 
 ## Getting Started
 To set up and run the project locally:
