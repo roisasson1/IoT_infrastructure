@@ -4,13 +4,13 @@ This project delivers a robust and flexible IoT infrastructure designed to facil
 ## Core API
 Clients interact with the system via a simple RESTful API for device and data management:
 
-registerCompany: Register a new company.
+**Register Company**: Register a new company.
 
-registerProduct: Register a new product type.
+**Register Product**: Register a new product type.
 
-registerIoT: Register a specific IoT device in the field.
+**Register IoT**: Register a specific IoT device in the field.
 
-updateIoT: Send real-time updates from a registered device.
+**Update IoT**: Send real-time updates from a registered device.
 
 ### Example Use Case: Smart Lamp
 A company registers its "Smart Lamp" product. When a user installs the lamp, it registers to the system, then continuously sends updates (e.g., status, brightness) via the updateIoT endpoint.
@@ -35,6 +35,8 @@ Allows dynamic loading of new commands via JAR files into a dedicated folder, ut
 
 ## Technologies Used
 **Core Language**: Java
+
+**Website**: Javascript, HTML, CSS, Apache Tomcat
 
 **Networking**: TCP, UDP, HTTP (using Selector for non-blocking I/O)
 
